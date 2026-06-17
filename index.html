@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todo List</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="todo-container">
+        <h1>Simple Todo List</h1>
+        <p>Welcome to this todo list. Double click to edit the todo</p>
+        
+        <div class="input-section">
+            <input type="text" placeholder="Enter a todo and press Add or Enter">
+            <input type="time" id="todo-time">
+            <button class="add-btn">Add</button>
+        </div>
+
+        <div class="todo-list">
+            
+            <div class="todo-item">
+                <div class="todo-left">
+                    <input type="checkbox">
+                    <span>Breakfast</span>
+                </div>
+                <button class="delete-btn">Delete</button>
+            </div>
+
+            <div class="todo-item">
+                <div class="todo-left">
+                    <input type="checkbox">
+                    <span>Study</span>
+                </div>
+                <button class="delete-btn">Delete</button>
+            </div>
+
+            <div class="todo-item">
+                <div class="todo-left">
+                    <input type="checkbox">
+                    <span>College</span>
+                </div>
+                <button class="delete-btn">Delete</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
