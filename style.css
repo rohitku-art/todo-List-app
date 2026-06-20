@@ -116,3 +116,162 @@ input[type="text"] {
     font-size: 12px;
     opacity: 0.8;
 }
+
+#search-input {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================================
+   AUTHENTICATION PAGE STYLING (LOGIN / SIGNUP)
+   ========================================================================== */
+
+/* Login/Signup ka main box container */
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.15); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Auth Title ("Login to Todo App") */
+.auth-container h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Auth Inputs (Email aur Password fields) */
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    color: #333;
+}
+
+/* Auth Buttons Common Styling */
+.auth-container button {
+    padding: 12px 25px;
+    margin: 10px 5px 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Sign In Button */
+#login-btn {
+    background-color: #3b909f;
+    color: white;
+}
+
+#login-btn:hover {
+    background-color: #2a6f7c;
+    transform: translateY(-1px);
+}
+
+/* Sign Up Button (Grey theme) */
+.auth-container button.secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.auth-container button.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-1px);
+}
+
+
+/* ==========================================================================
+   LOGOUT BUTTON (TODO PAGE)
+   ========================================================================== */
+
+/* Todo page par logout button ki alignment aur style */
+.logout-btn {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    align-self: flex-end; /* Top-right corner me set karne ke liye */
+    margin-bottom: 10px;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logout-btn:hover {
+    background-color: #b81d24;
+    transform: translateY(-1px);
+}
+
+/* --- Todo Dashboard New Header Styles --- */
+/* --- Todo Dashboard New Header Styles --- */
+.main-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #1e293b !important; /* 🔥 !important lagaya taaki refresh par color na badle */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 6px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+#auth-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155 !important; /* 🔥 Ise aur dark slate kiya aur !important lagaya */
+    margin-bottom: 28px;
+    text-align: center;
+    opacity: 1 !important;
+}
+
+ /* --- New Name Input Styling --- */
+#auth-name {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Smooth corners ke liye */
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.9); /* Input box ka background thoda clean dikhane ke liye */
+    box-sizing: border-box; /* Padding se width disturb nahi hogi */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Jab user Name box par click kare (Focus state) */
+#auth-name:focus {
+    border-color: #4f46e5; /* Border color blue ho jayega click karne par */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}

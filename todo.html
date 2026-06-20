@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="todo-container">
+
+        <h1>Simple Todo List</h1>
+    <button id="logout-btn" style="background: #dc3545; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; float: right;">Logout</button>
+
+        <p>
+            Welcome to this todo list.
+            Double click to edit the todo.
+        </p>
+
+        <div class="input-section">
+
+            <input
+                type="text"
+                placeholder="Enter a todo and press Add or Enter"
+            >
+
+            <input
+                type="time"
+                id="todo-time"
+            >
+
+            <button class="add-btn">
+                Add
+            </button>
+
+        </div>
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="🔍 Search tasks..."
+        >
+
+        <!-- Sirf ek todo-list -->
+        <div class="todo-list"></div>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>

@@ -3,50 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Todo List</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Todo App - Login / Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .auth-container { max-width: 400px; margin: 80px auto; padding: 30px; border: 1px solid #ccc; border-radius: 8px; background: #fff; text-align: center; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
+        .auth-container input { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; }
+        .auth-container button { padding: 10px 20px; margin: 10px 5px 0 5px; cursor: pointer; border: none; background: #007bff; color: white; border-radius: 4px; font-size: 14px; }
+        .auth-container button.secondary { background: #6c757d; }
+    </style>
 </head>
 <body>
 
-    <div class="todo-container">
-        <h1>Simple Todo List</h1>
-        <p>Welcome to this todo list. Double click to edit the todo</p>
+    <div class="auth-container">
+        <h1 class ="main-title">Todo Dashboard</h1>
+        <h2 id="auth-title">Login to Todo App</h2>
+        <input type="text" id="auth-name" placeholder="Enter Full Name" style="display: none;">
+        <input type="email" id="auth-email" placeholder="Enter Email" required>
+        <input type="password" id="auth-password" placeholder="Enter Password" required>
         
-        <div class="input-section">
-            <input type="text" placeholder="Enter a todo and press Add or Enter">
-            <input type="time" id="todo-time">
-            <button class="add-btn">Add</button>
-        </div>
-
-        <div class="todo-list">
-            
-            <div class="todo-item">
-                <div class="todo-left">
-                    <input type="checkbox">
-                    <span>Breakfast</span>
-                </div>
-                <button class="delete-btn">Delete</button>
-            </div>
-
-            <div class="todo-item">
-                <div class="todo-left">
-                    <input type="checkbox">
-                    <span>Study</span>
-                </div>
-                <button class="delete-btn">Delete</button>
-            </div>
-
-            <div class="todo-item">
-                <div class="todo-left">
-                    <input type="checkbox">
-                    <span>College</span>
-                </div>
-                <button class="delete-btn">Delete</button>
-            </div>
-
+        <div>
+            <button id="login-btn">Sign In</button>
+            <button id="signup-btn" class="secondary">Sign Up</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="auth.js"></script>
 </body>
 </html>
