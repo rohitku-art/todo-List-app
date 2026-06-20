@@ -1,0 +1,16 @@
+{
+  "name": "Firebase Todo List App",
+  "short_name": "Todo App",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "description": "A simple and secure Todo List App powered by Firebase.",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/906/906334.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

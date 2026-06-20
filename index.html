@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App - Login / Signup</title>
     <link rel="stylesheet" href="style.css">
+    <!-- PWA Manifest Link -->
+    <link rel="manifest" href="manifest.json">
     <style>
         .auth-container { max-width: 400px; margin: 80px auto; padding: 30px; border: 1px solid #ccc; border-radius: 8px; background: #fff; text-align: center; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
         .auth-container input { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; }
@@ -28,5 +30,16 @@
     </div>
 
     <script type="module" src="auth.js"></script>
+
+    <!-- PWA Service Worker Registration Script -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./service-worker.js')
+            .then(reg => console.log('Service Worker Registered!', reg))
+            .catch(err => console.log('Service Worker Registration Failed!', err));
+        });
+      }
+    </script>
 </body>
 </html>
